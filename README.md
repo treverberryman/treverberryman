@@ -21,7 +21,7 @@
 #### **Management & Deployment:** &nbsp;
   ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
   ![TeamCity](https://img.shields.io/badge/-TeamCity-000000.svg?style=for-the-badge&logo=teamcity&logoColor=white&labelColor=000000)
-  ![ITIL v4](https://img.shields.io/badge/ITIL-%236600CC.svg?style=for-the-badge)
+  ![ITIL v4](https://img.shields.io/badge/ITIL%20v4-%236600CC.svg?style=for-the-badge)
 
 #### **Software:**
   ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
