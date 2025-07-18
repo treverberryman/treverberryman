@@ -27,3 +27,11 @@ Here’s your updated README snippet with Node.js and npm added to your **Lang
   ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
   ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
   ![Cursor](https://img.shields.io/badge/cursor-%23000000.svg?style=for-the-badge&logo=cursor&logoColor=white)
+
+####  📈 GitHub Analytics &nbsp;
+
+  [![GitHub Streak](https://streak-stats.demolab.com?user=treverberryman&theme=dark)](https://git.io/streak-stats)
+
+####  📫 Let's Connect &nbsp;
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/treverberryman)
