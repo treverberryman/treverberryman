@@ -1,5 +1,3 @@
-Here’s your updated README snippet with Node.js and npm added to your **Languages** section:
-
 <h1 align="center">Hi, I'm <a href="https://github.com/treverberryman">Trever</a> 👋</h1>
 <p align="center">Hi, nice to meet you. I'm a creative developer, IT and QA professional based in New York.</p>
 <p align="center">In my free time, I enjoy learning languages, like 中国人 and Español. Some of the other things I love doing are hiking, meditating, photography and making Spotify playlists!</p>
