@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I'm <a href="https://github.com/treverberryman">Trever</a> 👋</h1>
-<p align="center">Hi, nice to meet you. I'm a creative developer, IT and QA professional based in New York.</p>
-<p align="center">In my free time, I enjoy learning languages, like 中国人 and Español. Some of the other things I love doing are hiking, meditating, photography and making Spotify playlists!</p>
+<p align="center">Hi, pleasure to meet you. I'm a creative developer, IT and QA professional based in New York.</p>
+<p align="center">In my free time, I enjoy learning languages, like Español and 中国人. Some of the other things I love doing are hiking, meditating, <a href="https://treverberryman.notion.site/Trever-s-Photography-Digital-Art-and-AI-Art-e46f59f7c7bc4e57aad64dabf7c7b6b7">photography</a> and making <a href="https://open.spotify.com/user/caliguy225">Spotify playlists</a>!</p>
 
 ### 🛠 Skills &nbsp;
 
