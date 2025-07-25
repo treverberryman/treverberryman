@@ -14,34 +14,99 @@ import Hero from '../components/Hero.astro';
 					width="1553"
 					height="873"
 					src="../../assets/AlienAboutMe.png"
-					alt=""
+					alt="Cartoon alien illustration representing Trever Berryman"
 				/>
 			</Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
+			<section aria-labelledby="background-heading">
+				<h2 id="background-heading" class="section-title">Hi, I’m Trever 👋</h2>
 				<div class="content">
-					<p>
-						Hi, I’m Trever (he/they) 👋 I'm a creative developer, IT and technical QA professional based in New York. I’m interested in automation and CI/CD and I'm learning more about those currently. I'm also a big #a11y for inclusive software development that incorporates diverse teams and content.
-					</p>
 					<br>
-					<p>
-						Some links: <a href="https://open.spotify.com/user/caliguy225">Spotify Profile↗</a>, <a href="https://treverberryman.notion.site/Trever-s-Photography-Digital-Art-and-AI-Art-e46f59f7c7bc4e57aad64dabf7c7b6b7"> My Photography↗</a>
-					</p>
+					<ul>
+						<li><b>Tier-2 Help Desk</b> professional</li>
+						<li><b>Software & Hardware QA Tester</b></li>
+						<li><b>Designer</b></li>
+						<li><b>Multimedia Artist</b></li>
+						<li><b>Accessibility Advocate</b> (#a11y)</li>
+						<li>Exploring DevOps, automation, cloud, Linux, open source, creative technology, and building AI workflows 🧑‍💻</li>
+					</ul>
 				</div>
 			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
+			<section aria-labelledby="offerings-heading">
+				<h2 id="offerings-heading" class="section-title">Offerings</h2>
 				<div class="content">
-					<p><b>Software:</b> JIRA, Test Rail, Perforce, Git, Unity3D, Command Line, TeamCity, Microsoft Azure PlayFab</p>
-					<br>
-					<p><b>Code:</b> C#, Javascript, HTML5, CSS</p>
-					<br>
-					<p><b>Operating Systems:</b> macOS, Windows 11/10/8/7/Vista/XP, iOS, Android</p>
+					<ul>
+						<li><b>Help Desk Support</b></li>
+						<li><b>Non-Profit Operations</b></li>
+						<li><b>QA Testing</b></li>
+						<li><b>Designing and Developing</b>
+							<ul>
+								<li>WordPress Websites</li>
+								<li>Personal Websites</li>
+								<li>AI Workflows</li>
+								<li>Web Apps</li>
+								<li>Apps</li>
+								<li>AI Workflows</li>
+								<li>Automation</li>
+								<li>Open Source Projects</li>
+							</ul>
+						</li>
+						<li><b>Resume Reviews / Mentorship</b></li>
+					</ul>
+				</div>
+			</section>
+			<section aria-labelledby="skills-heading">
+				<h2 id="skills-heading" class="section-title">Skills</h2>
+				<div class="content">
+					<ul>
+					  <li><b>Languages:</b>
+						<ul>
+						  <li>C#, JavaScript, Node.js, NPM, HTML5, CSS, No Code Tools</li>
+						</ul>
+					  </li>
+					  <li><b>Frameworks &amp; Libraries:</b>
+						<ul>
+						  <li>Astro, WebGL, WordPress, Electron</li>
+						</ul>
+					  </li>
+					  <li><b>Management, DevOps &amp; Deployment:</b>
+						<ul>
+						  <li>Git, Unity DevOps Version Control (Plastic SCM), TeamCity, Perforce, ITIL v4, Command Line Interfaces (CLI) </li>
+						</ul>
+					  </li>
+					  <li><b>Software:</b>
+						<ul>
+						  <li>PDQ Deploy, Active Directory (AD), Visual Studio Code, JIRA, Test Rail, ConnectWise, Mailchimp, CRMs (Hubspot, etc)</li>
+						</ul>
+					  </li>
+					  <li><b>Cloud:</b>
+						<ul>
+						  <li>Microsoft Azure, PlayFab</li>
+						</ul>
+					  </li>
+					  <li><b>Operating Systems:</b>
+						<ul>
+						  <li>macOS, Windows 11/10/8/7/Vista/XP, iOS, Android</li>
+						</ul>
+					  </li>
+					</ul>
+				  </div>
+				  
+			</section>
+			<section aria-labelledby="More About Me">
+				<h2 id="more-about-me-heading" class="section-title">More About Me</h2>
+				<div class="content">
+					<ul>
+						<li>I'm an English native, pero estoy practicando Español. I also have studied a little bit of Mandarin Chinese (Mainly the tones so far)</li>
+						<li>I'm interested in automation and CI/CD and I'm learning more about those currently. I'm also a big advocate for inclusive software development that incorporates diverse teams and content.</li>
+						<li>I'm passionate about creative technology and its connection to positive outcomes like Social Impact, Mental Health Advocacy, and Climate Change Mitigation.</li>
+						<li>I was a non-profit board member for 4 years with experience driving events programming, educational workshops, hackathons, and offline/online community management.</li>
+						<li>Emoji fanatic, natural tinkerer, and regular MacGyver</li>						
+						<li><a href="https://open.spotify.com/user/caliguy225" target="_blank" rel="noopener noreferrer" aria-label="Trever's Spotify Profile (opens in new tab)">Spotify Music Profile ↗</a></li>
+						<li><a href="https://treverberryman.notion.site/Trever-s-Photography-Digital-Art-and-AI-Art-e46f59f7c7bc4e57aad64dabf7c7b6b7" target="_blank" rel="noopener noreferrer" aria-label="Trever's Photography, Digital Art, and AI Art on Notion (opens in new tab)">My Photography ↗</a></li>
 				</div>
 			</section>
 		</main>
-
 		<ContactCTA />
 	</div>
 </BaseLayout>

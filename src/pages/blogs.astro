@@ -11,6 +11,11 @@ import BlogPreview from '../components/BlogPreview.astro';
 const projects = (await getCollection('blogs')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
+
+// Extract all unique tags from blog posts
+const allTags = Array.from(
+	new Set(projects.flatMap((project) => project.data.tags || []))
+).sort();
 ---
 <BaseLayout
 	title="Blogs | Trever Berryman"
@@ -23,10 +28,20 @@ const projects = (await getCollection('blogs')).sort(
 				tagline="Here are my most recent blog posts."
 				align="start"
 			/>
+
+      <!-- Tag Filter UI -->
+      <div id="tag-filter" class="tag-filter">
+        <button class="tag-btn active" data-tag="all" aria-pressed="true">All</button>
+        {allTags.map(tag => (
+          <button class="tag-btn" data-tag={tag} aria-pressed="false">{tag}</button>
+        ))}
+      </div>
+
+      <!-- Blog Grid -->
 			<Grid variant="offset">
 				{
 					projects.map((project) => (
-						<li>
+						<li class="blog-item" data-tags={(project.data.tags || []).join(',')}> 
 							<BlogPreview project={project} />
 						</li>
 					))
@@ -36,3 +51,60 @@ const projects = (await getCollection('blogs')).sort(
 		<ContactCTA />
 	</div>
 </BaseLayout>
+
+<style>
+  .tag-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .tag-btn {
+    background: var(--gray-900);
+    color: var(--gray-0);
+    border: 1px solid var(--gray-700);
+    border-radius: 1.5rem;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+  }
+  .tag-btn.active,
+  .tag-btn[aria-pressed="true"] {
+    background: var(--accent-dark);
+    color: var(--gray-0);
+    border-color: var(--accent-dark);
+  }
+</style>
+
+<script is:inline>
+  // Tag filtering logic
+  document.addEventListener('DOMContentLoaded', () => {
+    const tagButtons = document.querySelectorAll('.tag-btn');
+    const blogItems = document.querySelectorAll('.blog-item');
+    let activeTag = 'all';
+
+    function updateFilter(tag) {
+      activeTag = tag;
+      tagButtons.forEach(btn => {
+        const isActive = btn.dataset.tag === tag;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive);
+      });
+      blogItems.forEach(item => {
+        const tags = item.dataset.tags ? item.dataset.tags.split(',') : [];
+        if (tag === 'all' || tags.includes(tag)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    tagButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        updateFilter(btn.dataset.tag);
+      });
+    });
+  });
+</script>
